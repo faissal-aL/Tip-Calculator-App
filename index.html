@@ -14,28 +14,29 @@
 <main>
   <div class="left-container">
   <h2>Bill</h2>
-  <input class="dollar-input" type="text" placeholder="0">
+  <input id="bill" class="dollar-input" type="text" placeholder="0">
   <h2>Select Tip %</h2>
-  <button class="tip-button">5%</button>
-  <button class="tip-button">10%</button>
-  <button class="tip-button">15%</button>
-  <button class="tip-button">25%</button>
-  <button class="tip-button">50%</button>
-  <input class="custom-tip" type="text" placeholder="Custom">
+  <button class="tip-button tip-value" value="5">5%</button>
+  <button class="tip-button tip-value" value="10">10%</button>
+  <button class="tip-button tip-value" value="15">15%</button>
+  <button class="tip-button tip-value" value="25">25%</button>
+  <button class="tip-button tip-value" value="50">50%</button>
+  <input id="custom-tip" class="custom-tip tip-value" type="text" placeholder="Custom">
 
-  <h2>Number of People</h2>
-  <input class="people-input" type="text" placeholder="0">
+  <h2 class="number-people">Number of People</h2>
+  <h2 id="error">Can't be zero</h2>
+  <input id="people-number" class="people-input" type="text" value="0">
 </div>
   <div class="right-container">
-  <h2>Tip Amount</h2>
+  <h2 class="right-h2">Tip Amount</h2>
   <h3>/ person</h3>
-
- <h2>Total</h2>
+  <h4 id="tip-amount">$0.00</h4>
+ <h2 class="right-h2">Total</h2>
   <h3>/ person</h3>
-
-  <button>Reset</button>
+  <h4 id="total">$0.00</h4>
+  <button id="reset">Reset</button>
 </div>
 </main>
-
+<script src="script.js"></script>
 </body>
 </html>
